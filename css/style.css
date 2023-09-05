@@ -1,0 +1,145 @@
+/* 
+button {
+    position: relative;
+    display: block;
+    margin: 20px auto ;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid beige;
+    font-size: 15px;
+
+}
+.wave{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(16, 0, 109);
+    z-index: -7;
+    border-radius: 6px;
+    transition: .2s ease-in-out;
+    animation: bal_amar .6s infinite ease-out;
+}
+@keyframes bal_amar {
+     0% {
+      transform: translate(0px,0px);
+      transform: scale(1,1);
+      opacity: .5;
+   }   
+   50% {
+      transform: translate(10px,10px);
+      transform: scale(1.5,1.5);
+      opacity: .2;
+   }
+   100% {
+      transform: translate(0px,0px);
+      transform: scale(1,1);
+      opacity: .5;
+     }
+} */
+/* body {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.animation_test {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   ;
+}
+
+.first {
+   width: 15px;
+   height: 100px;
+   background-color: blue;
+   border-radius: 20px;
+   margin: 0 5px;
+}
+
+.f_one {
+   background-color: #00a8ff;
+   animation: anima 1s infinite linear;
+}
+
+.f_two {
+   background-color: #fbc531;
+   animation: anima 1s .3s infinite linear;
+}
+
+.f_three {
+   background-color: #273c75;
+   animation: anima 1s .6s infinite linear;
+}
+
+.f_four {
+   background-color: #487eb0;
+   animation: anima 1s .9s infinite linear;
+}
+
+@keyframes anima {
+   0% {
+      transform: translate(0px, 0px);
+      transform: scale(1,1);
+   }
+   
+   50% {
+      transform: translate(0px, 14px);
+      transform: scale(1.2,1.2);
+   }
+   
+   100% {
+      transform: translate(0px, 0px);
+      transform: scale(1,1);
+   }
+} */
+
+/* btn */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: black;
+}
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+button {
+   padding: 10px 15px;
+   border:2px solid #9c88ff;
+   background-color: transparent;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   color: #9c88ff;
+   transition: .5s ease-in-out;
+   border-radius: 20px;
+}
+button::after {
+   position: absolute;
+   content: "";
+   top: 0;
+   left: -200px;
+   height: 100%;
+   width: 100%;
+   background-color: #9c88ff;
+   z-index: -1;
+   transition: .5s ease-in-out;
+}
+button:hover::after{
+   left: 0;
+}
+button:hover {
+   color: #fff;
+}
