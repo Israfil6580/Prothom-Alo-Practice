@@ -164,11 +164,9 @@ header {
    font-size: 1.1rem;
 }
 #special {
-   height: 60vh;
-   /* display: flex;
-   justify-content: center;
-   align-items: center; */
+   padding-bottom: 20px;
 }
+
 #special .special_top {
    text-align: center;
    width: 100%;
